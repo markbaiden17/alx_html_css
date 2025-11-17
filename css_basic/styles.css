@@ -18,3 +18,13 @@ aside {
     flex: 1;
     overflow-y: auto;
 }
+
+h1, h2, h3 {
+    background-color: black;
+    color: aliceblue;
+}
+
+table {
+    border:solid 1px;
+    border-color: black;
+}
