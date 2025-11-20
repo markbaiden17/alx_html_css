@@ -17,7 +17,6 @@ body {
 :root {
     --color-dark-bg: #091C37;
     --color-accent: #9A30E6;
-    --color-pink: #FF6565;
     --color-light-purple: #C271FF;
 }
 
@@ -82,7 +81,7 @@ nav ul a {
 }
 
 nav ul a:hover {
-    color: var(--color-pink);
+    color: var(--color-light-purple);
 }
 
 /* HERO SECTION */
@@ -117,6 +116,11 @@ nav ul a:hover {
     margin: 0 30px 40px;
 }
 
+.hero-section h2 {
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
 
 /* PROFESSOR SECTION */
 
@@ -141,7 +145,6 @@ nav ul a:hover {
 .professor-section h2 {
     font-size: 32px;
     font-weight: 700;
-    margin-bottom: 50px;
     margin-bottom: 80px;
     color: white;
 }
@@ -189,7 +192,7 @@ nav ul a:hover {
 /* TESTIMONIAL SECTION */
 
 .testimonial-section {
-    background-color: #c271ff;
+    background-color: var(--color-light-purple);
     padding: 80px 0;
     color: white;
 }
@@ -202,8 +205,8 @@ nav ul a:hover {
 
     /* Use Flexbox For Layout */
     display: flex;
-    align-items: center; /* Vertically align items in the center */
-    gap: 70px; /* Space between the image and the text */
+    align-items: center;
+    gap: 70px;
 }
 
 .testimonial-section img {
@@ -238,7 +241,7 @@ nav ul a:hover {
     /* Style Title */
     font-size: 18px;
     font-weight: 400;
-    color: white;
+    color: #E0E0E0;
     margin-top: 0;
 }
 
@@ -348,13 +351,13 @@ nav ul a:hover {
 }
 
 .tutorial-section .stars .empty {
-    color: #ccc; /* Lighter color for empty stars */
+    color: #ccc; /* Lighter Color For Empty Stars */
 }
 
 .tutorial-section .duration {
     font-size: 14px;
     font-weight: 600;
-    color: #6c6c6c;
+    color: #a0a0a0;
 }
 
 /* MEMBERSHIP SECTION */
@@ -469,3 +472,66 @@ nav ul a:hover {
     color: #6c6c6c;
 }
 
+/* FOOTER */
+
+footer {
+    background-color: var(--color-dark-bg);
+    color: white;
+}
+
+.footer-content {
+    padding: 30px 0;
+}
+
+.footer-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+    text-align: center;
+}
+
+.footer-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+/* Logo Styling */
+.footer-logo img {
+    height: 30px; 
+    filter: brightness(0) invert(1);
+}
+
+/* Social Icons Styling */
+.footer-social {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-social .fa-brands {
+    /* Style For Social Media Icons */
+    font-size: 20px; 
+    color: white;
+
+    border: 1px solid white; 
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px; /* Centers Icon Vertically */
+    text-align: center;
+    transition: 0.3s;
+}
+
+.footer-social .fa-brands:hover {
+    color: var(--color-light-purple);
+    border-color: var(--color-light-purple);
+}
+
+/* Copyright Text Styling */
+.footer-copyright {
+    font-size: 14px;
+    color: #b3b3b3;
+    margin: 0;
+}
