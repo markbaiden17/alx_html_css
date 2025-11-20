@@ -241,3 +241,118 @@ nav ul a:hover {
     color: white;
     margin-top: 0;
 }
+
+/* TUTORIAL SECTION */
+
+.tutorial-section {
+    padding: 100px 0;
+    text-align: center;
+    color: black;
+}
+
+.tutorial-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 70px;
+}
+
+.tutorial-section .purple-text {
+    color: var(--color-light-purple);
+}
+
+.tutorial-section .grid-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Card Styling */
+.tutorial-section .video-card {
+    text-align: left;
+    flex-basis: 25%;
+}
+
+/* Thumbnail and Play Button Overlay */
+.tutorial-section .thumbnail-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.tutorial-section .thumbnail-wrapper img:first-child {
+    width: 100%;
+    height: auto;
+}
+
+/* Style For Font Awesome Play Icon */
+.tutorial-section .play-button-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: white;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+/* Card Content Details */
+.tutorial-section h3 {
+    font-size: 16px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.tutorial-section .card-description {
+    font-size: 14px;
+    font-weight: 400;
+    color: #6c6c6c;
+    margin-bottom: 15px;
+}
+
+/* Rater Info Styling */
+.tutorial-section .rater-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.tutorial-section .rater-info img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.tutorial-section .rater-info h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--color-accent);
+    margin: 0;
+}
+
+/* Rating Styling */
+.tutorial-section .rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tutorial-section .stars .fa-star {
+    color: var(--color-light-purple);
+    font-size: 13px;
+    margin-right: 2px;
+}
+
+.tutorial-section .stars .empty {
+    color: #ccc; /* Lighter color for empty stars */
+}
+
+.tutorial-section .duration {
+    font-size: 14px;
+    font-weight: 600;
+    color: #6c6c6c;
+}
