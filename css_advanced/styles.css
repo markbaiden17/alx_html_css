@@ -185,3 +185,59 @@ nav ul a:hover {
     font-size: 14px;
     opacity: 0.8;
 }
+
+/* TESTIMONIAL SECTION */
+
+.testimonial-section {
+    background-color: #c271ff;
+    padding: 80px 0;
+    color: white;
+}
+
+.testimonial-section .testimonial-content {
+    /* Set Max Width & Center Content */
+    max-width: 900px; 
+    margin: 0 auto;
+    padding: 0 20px;
+
+    /* Use Flexbox For Layout */
+    display: flex;
+    align-items: center; /* Vertically align items in the center */
+    gap: 70px; /* Space between the image and the text */
+}
+
+.testimonial-section img {
+    /* Style Profile Image */
+    width: 160px; /* Set Specific Width */
+    height: 160px; /* Set Specific Height */
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0; /* Prevent Image From Shrinking */
+}
+
+.testimonial-section .testimonial-text {
+    flex-grow: 1;
+}
+
+.testimonial-section blockquote {
+    /* Style Quote Text */
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.testimonial-section h3 {
+    /* Style Name */
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.testimonial-section p {
+    /* Style Title */
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    margin-top: 0;
+}
