@@ -356,3 +356,66 @@ nav ul a:hover {
     font-weight: 600;
     color: #6c6c6c;
 }
+
+/* MEMBERSHIP SECTION */
+
+.membership-section {
+    /* Sets Background Color */
+    background-color: var(--color-dark-bg); 
+    padding: 80px 0;
+    text-align: center;
+    color: white;
+}
+
+.membership-section .purple-text {
+    font-size: 32px;
+    font-weight: 700;
+    color: #C271FF;
+    margin-bottom: 70px;
+}
+
+.membership-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 70px;
+}
+
+.membership-section .features-grid {
+    /* Uses Flexbox/Grid For Layout */
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 70px;
+}
+
+.membership-section .feature-box {
+    /* Styles For Feature Box */
+    flex-basis: 25%;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.membership-section .feature-box img {
+    /* Styles Smiley Face Icon */
+    width: 65px; 
+    height: 65px;
+    margin-bottom: 25px;
+}
+
+.membership-section .feature-box h3 {
+    font-size: 16px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.membership-section .feature-box p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #b3b3b3;
+    line-height: 1.5;
+}
+
