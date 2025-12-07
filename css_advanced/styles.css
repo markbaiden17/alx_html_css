@@ -525,8 +525,11 @@ footer {
 }
 
 .footer-social .fa-brands:hover {
-    color: var(--color-light-purple);
-    border-color: var(--color-light-purple);
+    /* FIX 1: Change color to the project's accent color (FF6565) */
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    /* Ensure the icon color stays white for contrast */
+    color: white; 
 }
 
 /* Copyright Text Styling */
