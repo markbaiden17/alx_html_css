@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif; 
+    line-height: 1.6;
+    color: white;
+    background-color: white;
+    min-height: 100vh;
+}
+
+/* PRIMARY COLORS */
+:root {
+    --color-dark-bg: #091C37;
+    --color-accent: #FF6565;
+    --color-light-text: #E0E0E0;
+    --color-dark-text: #000000;
+}
+
+/* Container for section width limits */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Typography */
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 70px;
+}
+
+.section-description {
+    max-width: 750px;
+    margin: 0 auto 50px auto;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--color-light-text);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover, a:active {
+    color: var(--color-accent);
+}
+
+/* Custom Button Styling */
+.btn-call-to-action {
+    /* Layout & Positioning */
+    position: relative;
+    z-index: 5;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    margin-bottom: 60px;
+    cursor: pointer;
+
+    /* Colors & Typography */
+    background-color: var(--color-accent);
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    /* Effects */
+    box-shadow: 0 2px 10px rgba(255, 101, 101, 0.4);
+    transition: 0.3s;
+}
+
+.btn-call-to-action:hover,
+.btn-call-to-action:active {
+    opacity: 0.9;
+}
+
+/* <-- HEADER & NAVIGATION --> */
+
+.header-hero-wrapper {
+    position: relative;
+    overflow: hidden;
+    min-height: 800px;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    padding: 25px 0;
+    z-index: 10;
+}
+
+nav {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 11;
+}
+
+nav img {
+    position: static;
+    left: auto;
+    transform: none;
+    filter: none;
+    width: 150px;
+    margin-right: 20px;
+    z-index: 12;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+nav ul a {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: lowercase;
+    color: white;
+}
+
+nav ul a:hover,
+nav ul a:active {
+    color: var(--color-accent);
+}
+
+/* Mobile Menu Toggle Elements */
+.menu-toggle {
+    display: none; /* Hides the actual checkbox input */
+}
+
+.menu-icon {
+    position: absolute;
+    left: 20px; 
+    display: none; /* Hidden by default on desktop */
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    z-index: 100;
+}
+
+/* <-- HERO SECTION CONTENT & BACKGROUND --> */
+
+/* HERO BACKGROUND IMAGE & DARK OVERLAY */
+.hero-background-image-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+    /* Background Properties */
+    background-image: url("headphones_hero_1.jpg");
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    transform: none;
+
+    /* Dark overlay tint */
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section {
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 220px;
+    padding-bottom: 120px;
+}
+
+.hero-section h1 {
+    font-size: 46px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-section > .container > p:first-of-type {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.hero-description {
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* <-- MOBILE RESPONSIVENESS --? */
+
+@media screen and (max-width: 480px) {
+
+    /* 1. Header/Navigation Collapse */
+    nav {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav img {
+        margin: 0;
+    }
+
+    nav ul {
+        display: none; /* Hide the desktop menu by default on mobile */
+    }
+
+    .menu-icon {
+        display: block; /* Show the hamburger icon */
+        position: static;
+        left: auto;
+    }
+
+}
+/* <-- JAVASCRIPT TOGGLE CLASSES --> */
+
+.nav-open {
+    position: absolute;
+    top: 40px;
+    display: flex !important;
+    flex-direction: column;
+    left: 0;
+    width: 100%;
+    min-height: 50px;
+    height: auto; 
+    overflow-y: hidden;
+    align-items: center;
+    padding: 5px;
+    z-index: 50;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-open li {
+    padding: 2px 0;
+    text-align: center;
+    list-style: none;
+}
+
+.nav-open li a {
+    font-size: 20px;
+    font-weight: 200;
+    text-transform: lowercase;
+    color: white;
+}
+
+.nav-open li a:hover {
+    color: var(--color-accent);
+}
